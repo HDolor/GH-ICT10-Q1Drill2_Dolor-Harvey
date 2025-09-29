@@ -10,8 +10,15 @@ def data(d):
     t1 = document.getElementById('t1').value
     n1 = document.getElementById('n1').value
     t2 = document.getElementById('t2').value
-    display(f'''Your name is {t1} \n at {n1} years old \n studying at {t2}.
-    ''', target="out")
+    uno = f'|| Name : \t{t1}'
+    dos = f'\n|| Age : {n1}'
+    tres = f'\n|| School : {t2}'
+    mult = f'''{uno}\t 
+    {dos}\t 
+    {tres}'''
+    display(f'{mult}', target="out")
+    print(mult)
+    display(f'Your name is {t1}, at {n1} years old, studying in {t2}. ', target="word")
 """
 print(mult)
 
